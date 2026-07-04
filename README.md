@@ -20,8 +20,10 @@ My 3D model by itself:
 <img width="576" height="487" alt="CASE" src="https://github.com/user-attachments/assets/6b6083a2-c586-4ae9-bc2e-2925b46fe53e" />
 
 
-Link to Onshape case:[
-(https://cad.onshape.com/documents/42b88acdea95ca2d6ca5d2dd/w/0a431a4c711744f2617bcd3a/e/731c74bdddadee31c15ff64c)
+Link to Onshape case:
+
+https://cad.onshape.com/documents/d627d659f05dae60588ec801/w/ad74ef98cd2d7a13cb59f9ec/e/f50ed022a94792dc2cfe6130?renderMode=0&uiState=6a4947abb17d022f5d41873a
+
 
 
 PCB (Signal Layer and ground):
