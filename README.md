@@ -11,14 +11,20 @@ I created TheraPatch to help people recover from sports-related injuries and min
 
 Here are images of my project
 
-3D model with my PCB:
+CAD with the PCB:
 
-<img width="369" height="338" alt="CaseTop" src="https://github.com/user-attachments/assets/13792dfa-c5c9-42dc-b432-33d044172cd8" />
+<img width="491" height="524" alt="Screenshot 2026-07-04 at 1 53 12 PM" src="https://github.com/user-attachments/assets/c9aa02cf-47bf-4d0b-9159-3f62e53c6c75" />
 
-My 3D model by itself:
+<img width="860" height="535" alt="Screenshot 2026-07-04 at 1 53 32 PM" src="https://github.com/user-attachments/assets/61e79f9d-1325-4d9e-8768-30e69478cb92" />
 
-<img width="576" height="487" alt="CASE" src="https://github.com/user-attachments/assets/6b6083a2-c586-4ae9-bc2e-2925b46fe53e" />
 
+CAD input ports, fins, and Peliter hole
+
+<img width="576" height="519" alt="Screenshot 2026-07-04 at 1 54 11 PM" src="https://github.com/user-attachments/assets/8a456222-b25e-43ab-94a3-2ddde18c2c22" />
+
+<img width="739" height="498" alt="Screenshot 2026-07-04 at 1 55 22 PM" src="https://github.com/user-attachments/assets/37d6ade7-3b82-45b5-abc2-69d01d795669" />
+
+<img width="366" height="356" alt="Screenshot 2026-07-04 at 1 55 41 PM" src="https://github.com/user-attachments/assets/d9225b02-e006-4cde-81e3-795e07dad236" />
 
 Link to Onshape case:
 
