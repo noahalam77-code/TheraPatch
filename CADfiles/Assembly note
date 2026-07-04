@@ -1,0 +1,12 @@
+The therapatch device is a two-part build, with an external battery case carried in your pocket and the main heating/cooling unit
+
+The main unit consists of a 70x70x45mm body with 3mm walls and M2 screw holes
+The heating and cooling unit (peliter) sits in a 41x41 cutout, above it, dissipating its heat and cold is the heat sink, and above the heat sink is the fan, both of which are 60x60mm 
+The cutouts (USB-C barrel jack, LCD window, and button holes) all line up with the board's connectors
+The lid locks the internal components within the case, with M2 self-tapping screws (1.6mm holes on the case, 2.2mm holes on the lid)
+
+The battery caddy is  81x67x29mm with 2.5mm walls
+Its main purpose is to hold the 3S batteries, it has a screw-on lid, and the wire passes out of a slit on the lid
+kept separate so the main unit isn't overly bulky and maximizes comfort for users.
+
+All parts were designed in Onshape with STL and STEP files in "CADfiles"
