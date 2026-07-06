@@ -1,1 +1,8 @@
+You need Arduino IDE, Mincore Installed, USBasp programmer, + dupont jumpers
 
+Pick: ATmega328 (with minicore), an external 16MHz crystal, and USBasp programmer
+
+Take the USBasp programmer and locate the board's ISP headers, and then match the USBasp programmer's pins to the boards and connect them via dunpont jumper wires
+
+Than flash tools-->burn bootloader
+sketch --> upload using programmer (only if you change the code)
