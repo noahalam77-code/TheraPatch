@@ -4,5 +4,5 @@ Pick: ATmega328 (with minicore), an external 16MHz crystal, and USBasp programme
 
 Take the USBasp programmer and locate the board's ISP headers, and then match the USBasp programmer's pins to the boards and connect them via dunpont jumper wires
 
-Than flash tools-->burn bootloader
+Than flash tools-->burn bootloader (near the bottom)
 sketch --> upload using programmer (only if you change the code)
