@@ -1,13 +1,15 @@
 # TheraPatch
-TheraPatch is a hand-held device you place around your arm, leg, or other areas to help them heal from bruises and other minor injuries. By using a reverse-polarity system via an H-bridge, TheraPatch can heat the affected area (dilating blood vessels) or cool it (constricting blood vessels), both of which facilitate healing within the temperature range. 
+Therpatch is a handheld therapeutic device designed to help mitigate injuries from bruises, sprains, minor cuts, and more. By using a reverse-polarity system via an H-bridge, TheraPatch can heat the affected area (dilating blood vessels) or cool it (constricting blood vessels), both of which have been shown to help with injury healing at certain temperatures (which TheraPatch can achieve). 
 
-To use this therapeutic device, follow this step-by-step guide:
-1. Plug the charging cable into the device 
-2. Set the parameters for temperature, time, and mode (hot or cold)
-3. Hold it by hand against the affected area, or conversely, utilize the strap provided
-4. Click start, and begin the therapy session
+Use of Therpatch
+1. Either use it with the battery or plug it into a wall socket via Barrel jack
+2. Set your parameters with the 4 buttons below
+3. Click the "start/stop" button to start and the " stop button to stop
+4. Place the side with the pleiter facing out against the affected area
 
-I created TheraPatch to help people recover from sports-related injuries and minor pain. Growing up, we always relied on wasteful disposable ice packs and single-use heating pads (school-nurse vibes, lol). The problem was clear as day, so I built TheraPatch: a reusable biomedical device that delivers the same hot- and cold-therapy relief without the waste, saving both money and the environment (and ur backpack from the annoying water that comes out of those cheap icepacks).
+I created TheraPatch to help people recover from sports-related injuries, regular everyday injuries, and minor pain. Growing up, we always relied on disposable ice packs and single-use heating pads, which were wasteful and not efficient for long-term use (To reuse a heating pad, for example, you must boil it for 30 minutes, which is time-consuming and wasteful, especially if you're in a rush) Therpatch offers a quick sultion to this mess, if your out in the feild playing you can use the battery to power a ice cold therpatuic session or a warm soothing one, if your at home you can pluf it into any wall and enjoy hours of cold or warm without being intruputed by a soggy wet icepack or a short lasting heat pad.
+
+The therpatch looks like a simple black-and-white hot-cold block, but its guts are far more advanced. In electronics, generating heat is relatively simple. Electrons bump into each other rapidly in the wire, vibrating and thus creating the heat we feel. This is the easy part; cooling is the real engineering challenge. To cool it, I used a Peltier module, which transfers heat from one side to the other. Now, this needs to be driven by a heatsink and a fan to effectively cool. To achieve heating and cooling on the same side, I used an H bridge. Now the H-bridge module reverses the polarity in a pleiter, meaning that when one side is + and the other is -, it cools; vice versa, the side that was just cold becomes hot. All of this is controlled by a custom 4-layer PCB I designed in KiCad, with an ATmega328P as my brain. The firmware reads a thermistor pressed against the Peltier plate and uses a Bang-Bang controller to turn the Peltier on/off to reach the desired temperature. This is all run by a rechargeable battery (charges via USB-C) or a 12V wall adapter. These components are encased in a CAD-made box with a hole for all the input plugs and vent fans for air circulation.
 
 Here are images of my project
 
