@@ -2,13 +2,12 @@
 TheraPatch is a handheld therapeutic device designed to help mitigate the effects of injuries such as bruises, sprains, minor cuts, and more. By using a reverse-polarity system via an H-bridge, TheraPatch can heat the affected area (dilating blood vessels) or cool it (constricting blood vessels), both of which have been shown to help with injury healing at certain temperatures (which TheraPatch can achieve). 
 
 # Use of TheraPatch
-1. Either use it with the battery or plug it into a wall socket via the barrel jack
-2. Set your parameters with the 4 buttons below
-3. Click the "start/stop" button to start and the " stop button to stop
-4. Place the side with the Peltier facing out against the affected area
+To use the TheraPatch, first ensure your battery/wall adapter is plugged in, then locate the 4 buttons on the top of the device; these buttons will allow you to set your desired parameters by moving through the mode (hot/cold), set temp, and set time menus. After completing, click the start button to initiate your therapy session, and place the side with the Peltier facing out against the affected area
 
+# Motivation
 I created TheraPatch to help people recover from sports-related injuries, regular everyday injuries, and minor pain. Growing up, we always relied on disposable ice packs and single-use heating pads, which were wasteful and not efficient for long-term use (To reuse a heating pad, for example, you must boil it for 30 minutes, which is time-consuming, especially if you're in a rush, and wasteful) Therpatch offers a quick solution to this mess, if your out in the field playing you can use the battery to power a ice cold therapeutic session or a warm soothing one, if your at home you can pluf it into any wall and enjoy hours of cold or warm without being interrupted by a soggy wet ice pack or a short lasting heat pad.
 
+#Contents
 The TheraPatch looks like a simple black-and-white hot-cold block, but its guts are far more advanced. In electronics, generating heat is relatively simple. Electrons bump into each other rapidly in the wire, vibrating and thus creating the heat we feel. This is the easy part; cooling is the real engineering challenge. To cool it, I used a Peltier module, which transfers heat from one side to the other. Now, this needs to be driven by a heatsink and a fan to effectively cool. To achieve heating and cooling on the same side, I used an H bridge. Now the H-bridge module reverses the polarity in a Peltier module, meaning that when one side is + and the other is -, it cools; vice versa, the side that was just cold becomes hot. All of this is controlled by a custom 4-layer PCB I designed in KiCad, with an ATmega328P as my brain. The firmware reads a thermistor pressed against the Peltier plate and uses a bang-bang controller to turn the Peltier on/off to reach the desired temperature. This is all run by a rechargeable battery (charges via USB-C) or a 12V wall adapter. These components are encased in a CAD-made box with a hole for all the input plugs and vent fans for air circulation.
 
 Here are images of my project
