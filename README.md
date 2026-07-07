@@ -7,12 +7,17 @@ To use the TheraPatch, first ensure your battery/wall adapter is plugged in, the
 # Motivation
 I created TheraPatch to help people recover from sports-related injuries, regular everyday injuries, and minor pain. Growing up, we always relied on disposable ice packs and single-use heating pads, which were wasteful and not efficient for long-term use (To reuse a heating pad, for example, you must boil it for 30 minutes, which is time-consuming, especially if you're in a rush, and wasteful) Therpatch offers a quick solution to this mess, if your out in the field playing you can use the battery to power a ice cold therapeutic session or a warm soothing one, if your at home you can pluf it into any wall and enjoy hours of cold or warm without being interrupted by a soggy wet ice pack or a short lasting heat pad.
 
-#Contents
+# Contents
 The TheraPatch looks like a simple black-and-white hot-cold block, but its guts are far more advanced. In electronics, generating heat is relatively simple. Electrons bump into each other rapidly in the wire, vibrating and thus creating the heat we feel. This is the easy part; cooling is the real engineering challenge. To cool it, I used a Peltier module, which transfers heat from one side to the other. Now, this needs to be driven by a heatsink and a fan to effectively cool. To achieve heating and cooling on the same side, I used an H bridge. Now the H-bridge module reverses the polarity in a Peltier module, meaning that when one side is + and the other is -, it cools; vice versa, the side that was just cold becomes hot. All of this is controlled by a custom 4-layer PCB I designed in KiCad, with an ATmega328P as my brain. The firmware reads a thermistor pressed against the Peltier plate and uses a bang-bang controller to turn the Peltier on/off to reach the desired temperature. This is all run by a rechargeable battery (charges via USB-C) or a 12V wall adapter. These components are encased in a CAD-made box with a hole for all the input plugs and vent fans for air circulation.
 
 Here are images of my project
 
-CAD with the PCB:
+
+
+
+
+
+# CAD with the PCB:
 
 <img width="491" height="524" alt="Screenshot 2026-07-04 at 1 53 12 PM" src="https://github.com/user-attachments/assets/c9aa02cf-47bf-4d0b-9159-3f62e53c6c75" />
 
@@ -27,13 +32,13 @@ CAD input ports, fins, and Peliter hole
 
 <img width="366" height="356" alt="Screenshot 2026-07-04 at 1 55 41 PM" src="https://github.com/user-attachments/assets/d9225b02-e006-4cde-81e3-795e07dad236" />
 
-Link to Onshape case:
+# Link to Onshape case:
 
 https://cad.onshape.com/documents/d627d659f05dae60588ec801/w/ad74ef98cd2d7a13cb59f9ec/e/f50ed022a94792dc2cfe6130?renderMode=0&uiState=6a4947abb17d022f5d41873a
 
 
 
-PCB (Signal Layer and ground):
+# PCB (Signal Layer and ground):
 
 F.cu (signal traces and ground):
 
