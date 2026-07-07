@@ -24,7 +24,7 @@ Here are images of my project
 <img width="860" height="535" alt="Screenshot 2026-07-04 at 1 53 32 PM" src="https://github.com/user-attachments/assets/61e79f9d-1325-4d9e-8768-30e69478cb92" />
 
 
-CAD input ports, fins, and Peliter hole
+# CAD input ports, fins, and Peliter hole
 
 <img width="576" height="519" alt="Screenshot 2026-07-04 at 1 54 11 PM" src="https://github.com/user-attachments/assets/8a456222-b25e-43ab-94a3-2ddde18c2c22" />
 
