@@ -1,11 +1,20 @@
 # TheraPatch
+
+## Repository file structure
+- BOM: JCLPCB BOM & regular BOM
+- CADfiles: STEP files, STL files, and assembly notes
+- PCB: Gerber files, schematic images, and PCB images
+- Firmware: Code & flashing instructions
+
+
+## What it is
 TheraPatch is a handheld therapeutic device designed to help mitigate the effects of injuries such as bruises, sprains, minor cuts, and more. By using a reverse-polarity system via an H-bridge, TheraPatch can heat the affected area (dilating blood vessels) or cool it (constricting blood vessels), both of which have been shown to help with injury healing at certain temperatures (which TheraPatch can achieve). 
 
-# Use of TheraPatch
-To use the TheraPatch, first ensure your battery/wall adapter is plugged in, then locate the 4 buttons on the top of the device; these buttons will allow you to set your desired parameters by moving through the mode (hot/cold), set temp, and set time menus. After completing, click the start button to initiate your therapy session, and place the side with the Peltier facing out against the affected area
-
-# Motivation
+## Motivation
 I created TheraPatch with the primary motivation of helping people with common sports/activty related injuries while maintaining an efficient device to do so. Most of the time, when you have a bruise or scrape, you'd rely on disposable ice packs or inefficient heating pads, which are wasteful and time-consuming for long-term use. TheraPatch offers an effective, infinitely reusable solution to this. Instead of freezing water for 3-4 hours or boiling a heatpack everytime you need to reuse it, all you do with TheraPatch is plug and play. It's effective for athletes and normal people.
+
+## Use of TheraPatch
+To use the TheraPatch, first ensure your battery/wall adapter is plugged in, then locate the 4 buttons on the top of the device; these buttons will allow you to set your desired parameters by moving through the mode (hot/cold), set temp, and set time menus. After completing, click the start button to initiate your therapy session, and place the side with the Peltier facing out against the affected area
 
 ## Contents
 The TheraPatch looks like a simple black-and-white hot-cold block, but its guts are far more advanced. In electronics, generating heat is relatively simple. Electrons bump into each other rapidly in the wire, vibrating and thus creating the heat we feel. This is the easy part; cooling is the real engineering challenge. To cool it, I used a Peltier module, which transfers heat from one side to the other. Now, this needs to be driven by a heatsink and a fan to effectively cool. To achieve heating and cooling on the same side, I used an H bridge. Now the H-bridge module reverses the polarity in a Peltier module, meaning that when one side is + and the other is -, it cools; vice versa, the side that was just cold becomes hot. All of this is controlled by a custom 4-layer PCB I designed in KiCad, with an ATmega328P as my brain. The firmware reads a thermistor pressed against the Peltier plate and uses a bang-bang controller to turn the Peltier on/off to reach the desired temperature. This is all run by a rechargeable battery (charges via USB-C) or a 12V wall adapter. These components are encased in a CAD-made box with a hole for all the input plugs and vent fans for air circulation.
