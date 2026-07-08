@@ -3,7 +3,7 @@
 ## Repository file structure
 - BOM: JCLPCB BOM & regular BOM
 - CADfiles: STEP files, STL files, and assembly notes
-- PCB: Gerber files, schematic images, and PCB images
+- PCB: PCB files, Gerber files, schematic images, and PCB images
 - Firmware: Code & flashing instructions
 
 
