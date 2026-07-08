@@ -1,0 +1,30 @@
+Comment,Designator,Footprint,LCSC Part Number
+USB-C,USBC1,USBC_U:USB-C_SMD-TYPE-C-31-M-12_1,C165948
+5A Fuse,F2,Fuse:Fuse_1206_3216Metric,C41367229
+Crystal,Y1,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm,C122519
+Ferrite bead,FB1,Inductor_SMD:L_0805_2012Metric,C21519
+AO3400A diode,Q4,Package_TO_SOT_SMD:SOT-23,C20917
+SS54 Diode,"D1, D2, D3, D6",Diode_SMD:D_SMA,C22452
+33µH inductor,L1,inductor_33uh:IND-SMD_L12.3-W12.3,C9400
+120K Resitor,"R21, R35",Resistor_SMD:R_0805_2012Metric,C2907223
+90K Resitor,R24,Resistor_SMD:R_0805_2012Metric,C5123603
+68K Resitor,R22,Resistor_SMD:R_0805_2012Metric,C2907283
+51K Resitor,R20,Resistor_SMD:R_0805_2012Metric,C2933461
+47K restior,R27,Resistor_SMD:R_0805_2012Metric,C2930202
+10K Restior,"R34, R33, R28, R16, R13, R12, R10, R9, R8, R5, R3, R2, R1",Resistor_SMD:R_0805_2012Metric,C2907219
+5.1K resistor,"R18, R19",Resistor_SMD:R_0805_2012Metric,C27834
+3.3K resistor,"R7, R14",Resistor_SMD:R_0603_1608Metric,C2907023
+1k resistor,"R32, R23, R17, R15, R6, R4",Resistor_SMD:R_0603_1608Metric,C2907002
+100Ω resistor,R11,Resistor_SMD:R_0603_1608Metric,C105588
+220uF capacitor,C2,Capacitor_SMD:CP_Elec_6.3x7.7,C22388075
+100uF capacitor,C8,Capacitor_SMD:CP_Elec_6.3x7.7,C970685
+22uF capacitor,"C14, C17",Capacitor_SMD:C_0805_2012Metric,C45783
+10uF capacitor,"C25, C23, C22,C10",Capacitor_SMD:C_1206_3216Metric,C9807
+1uF capacitor,C7,Capacitor_SMD:C_0603_1608Metric,C29936
+0.1uF capacitor,"C24, C19, C18, C15, C13, C12, C11, C9, C6, C5, C4, C3, C1",Capacitor_SMD:C_0603_1608Metric,C1590
+22pF capacitor,"C20,C21",Capacitor_SMD:C_0603_1608Metric,C1653
+ST VNH5019ATR-E,U2,Package_SO:ST_MultiPowerSO-30,C2653552
+LM2596S-5.0,U1,Package_TO_SOT_SMD:TO-263-5_TabPin3,C116713
+WCH CH224K,U3,CH224K:ESSOP-10_L4.9-W3.9-P1.0-LS6.0-TL-EP,C970725
+IP2326,U5,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,C2832094
+ATMEGA328P-AU,U4,Package_QFP:TQFP-32_7x7mm_P0.8mm,C14877
